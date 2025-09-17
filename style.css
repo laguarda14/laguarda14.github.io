@@ -5,7 +5,7 @@ body {
   background: #f9f9f9;
   color: #333;
 
-  /* center container horizontally only */
+  /* center container horizontally */
   display: flex;
   justify-content: center;
 }
@@ -15,4 +15,9 @@ body {
   width: 100%;        /* responsive */
   text-align: left;   /* text inside aligned left */
   padding: 2rem;      /* inner spacing */
+}
+
+h1, p {
+  display: block;
+  margin: 0 0 1rem 0; /* bottom margin for spacing between elements */
 }
