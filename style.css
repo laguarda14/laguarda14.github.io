@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  max-width: 600px;   /* limits width */
+  max-width: 800px;   /* limits width */
   width: 100%;        /* responsive */
   text-align: left;   /* text inside aligned left */
   padding: 2rem;      /* inner spacing */
