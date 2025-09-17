@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+
+  /* center container horizontally only */
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 600px;   /* limits width */
+  width: 100%;        /* responsive */
+  text-align: left;   /* text inside aligned left */
+  padding: 2rem;      /* inner spacing */
+}
