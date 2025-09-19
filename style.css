@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;          /* full viewport height */
   font-family: Arial, sans-serif;
   background: #f9f9f9;
   color: #333;
@@ -10,14 +11,43 @@ body {
   justify-content: center;
 }
 
+/* container for main content */
 .container {
-  max-width: 800px;   /* limits width */
+  max-width: 1000px;   /* limits width */
   width: 100%;        /* responsive */
-  text-align: left;   /* text inside aligned left */
+  text-align: center;   /* text inside aligned left */
   padding: 2rem;      /* inner spacing */
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 h1, p {
   display: block;
   margin: 0 0 1rem 0; /* bottom margin for spacing between elements */
+  word-wrap: break-word; /* prevent overflow */
+}
+
+/* responsive heading font */
+h1 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+/* small screens padding */
+@media (max-width: 600px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* footer at the bottom */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  padding: 1rem 0;
 }
