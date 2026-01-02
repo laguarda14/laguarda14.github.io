@@ -1,53 +1,170 @@
-body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;          /* full viewport height */
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  color: #333;
+html, body {
+  height: 100%;
+}
 
-  /* center container horizontally */
-  display: flex;
-  justify-content: center;
+body {
+   margin: 0;
+   padding: 0;
+   min-height: 100vh;   /* full viewport height */
+   /* font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif; */
+   /* font-family: "Source Sans 3", system-ui, sans-serif; */
+   font-family: "DM Sans", sans-serif;
+   background: #f9f9f9;
+   color: #333;
+   font-weight: 280;
+   font-size: 17px;
+   /* center container horizontally */
+   /* display: flex;
+   justify-content: column; */
+   line-height: 1.4;
+}
+
+.subtitle {
+   margin: 0.2rem 0;
+   font-size: 0.95rem;
+   /* color: #555; */
+}
+
+.location {
+   margin-top: 0;
+   margin-bottom: 1.5rem;
+   font-size: 0.95rem;
+   /* color: #555; */
 }
 
 /* container for main content */
 .container {
-  max-width: 1000px;   /* limits width */
-  width: 100%;        /* responsive */
-  text-align: center;   /* text inside aligned left */
-  padding: 2rem;      /* inner spacing */
-  box-sizing: border-box;
-  margin: 0 auto;
+   max-width: 980px;   /* limits width */
+   width: 100%;        /* responsive */
+   text-align: left;   /* text inside aligned left */
+   padding: 2rem;      /* inner spacing */
+   box-sizing: border-box;
+   /* flex: 1; */
+   margin: 0 auto;
+   padding: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 h1, p {
-  display: block;
-  margin: 0 0 1rem 0; /* bottom margin for spacing between elements */
-  word-wrap: break-word; /* prevent overflow */
-}
-
-/* responsive heading font */
-h1 {
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
+   display: block;
+   margin: 0 0 1rem 0; /* bottom margin for spacing between elements */
+   word-wrap: break-word; /* prevent overflow */
 }
 
 /* small screens padding */
 @media (max-width: 600px) {
-  .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+   .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+   }
 }
 
 /* footer at the bottom */
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #666;
-  padding: 1rem 0;
+   /* position: absolute; */
+   /* bottom: 0; */
+   /* left: 0; */
+   /* width: 100%; */
+   text-align: center;
+   font-size: 0.9rem;
+   color: #666;
+   padding: 1rem 0;
+}
+
+/* profile layout */
+.profile {
+   display: flex;
+   gap: 3rem;
+   margin-top: 2rem;
+   align-items: center;
+}
+
+/* profile image */
+.profile-pic {
+   width: 250px;
+   height: 250px;
+   object-fit: cover;
+   border-radius: 12px;
+   border: none;
+   filter: grayscale(30%);
+   flex-shrink: 0;
+}
+
+/* text next to image */
+.profile-text {
+   flex: 1; /* Let the text grow naturally inside the wider container instead of hard-capping it */
+   min-width: 0;
+}
+
+.profile-text p:last-of-type {
+   margin-bottom: 0;
+}
+
+/* links */
+a {
+  color: #0000EE; /* LaTeX-style blue */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #0000EE; /* keep blue, no purple */
+}
+
+section {
+  margin-top: 2rem;
+}
+
+/* responsive heading font */
+h1 {
+   font-size: 1.8rem;
+   margin-bottom: 0.25rem;
+   font-weight: 600;
+}
+
+h2 {
+   font-weight: 500;
+   font-size: 1.2rem;
+   margin-bottom: 0.5rem;
+}
+
+ul {
+   padding-left: 1.2rem;
+   margin-top: 0.5rem;
+}
+
+ul li {
+   margin-bottom: 0.6rem;
+}
+
+/* back link (always black, no underline) */
+.back-link,
+.back-link:visited,
+.back-link:active {
+   text-decoration: none;
+   /* font-weight: normal; */
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+}
+
+
+/* mobile layout */
+@media (max-width: 700px) {
+   .profile {
+      flex-direction: column;
+      text-align: left;
+   }
+
+   .links {
+      justify-content: center;
+   }
 }

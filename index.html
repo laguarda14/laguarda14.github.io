@@ -1,19 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
-  <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Laguarda</title>
+   <link rel="stylesheet" href="style.css">
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/latin-modern-roman/index.css"> -->
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter/index.css"> -->
+   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@250;280;300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1>This is the personal website of Luis Laguarda</h1>
-    <p>The time in Amsterdam is <span id="time"></span> CEST</p>
+   <div class="container">
+
+      <!-- profile section -->
+      <section class="profile">
+
+      <div class="profile-text">
+         <h1>Luis Laguarda, PhD</h1>
+
+         <p class="location">
+            Aerodynamicist & HPC specialist based in Rotterdam (local time: <span id="time"></span> CEST)
+         </p>
+
+         <p>
+         I am a lecturer in the <a href="https://www.tudelft.nl/lr/organisatie/afdelingen/flow-physics-and-technology/aerodynamics" target="_blacnk">Aerodynamics section at TU Delft</a>, where I conduct research at the intersection of numerical methods, physical modeling and high-performance computing to study complex turbulent flow phenomena. My role also involves developing advanced computational tools and delivering hands-on training in advanced scientific computing, including distributed, shared-memory, and GPU programming. I also support TU Delft's HPC community in the use of the <a href="https://www.tudelft.nl/dhpc/system" target="_blank">DelftBlue</a> supercomputer.
+         </p>
+      </div>
+
+      <img src="profile.jpg" alt="Photo of Your Name" class="profile-pic" />
+
+      </section>
+
+      <!-- research interests -->
+      <section>
+         <h2>reasearch topics I care about</h2>
+         <p>
+            I have long been interested in the dynamics of shock-induced recirculation bubbles. In recent years, my work has expanded toward the practical application of flow control and the use of deep reinforcement learning to develop effective control strategies. Alongside this, I study compressible wall-bounded turbulence for physics-based modeling, including inflow turbulence generation and non-equilibrium wall models for large-eddy simulations. A list of selected publications highlighting my work is provided <a href="publications.html">here</a>. I also work extensively in massively parallel scientific computing across various architectures, with a strong focus on I/O performance and scalability.
+         </p>
+      </section>
+
+      <!-- compute grants -->
+      <section>
+         <h2>compute grants</h2>
+         <ul>
+         <li>2025-2027: <em>72 mio CPU hours</em> on the Dutch national supercomputer <a href="https://www.surf.nl/en/services/compute/snellius-the-national-supercomputer" target="_blank">Snellius</a> via <a href="https://www.nwo.nl/en/what-does-the-dutch-research-council-do" target="_blank">NWO</a> for research on shock-induced separation control (<em>initial allocation awarded; full allocation still under review</em>)</li>
+         <li>2021-2023: <em>60 mio CPU hours</em> on the <a href="https://www.hlrs.de/solutions/systems/hpe-apollo-hawk" target="_blank">HLRS HAWK</a> supercomputer through <a href="https://prace-ri.eu/" target="_blank">PRACE</a> to investigate shock-wave/turbulent boundary-layer interactions with elastic structures</li>
+         </ul>
+      </section>
+
+      <!-- social -->
+      <section>
+         <h2>where to find me</h2>
+         <ul>
+            <li><a href="https://scholar.google.com/citations?user=D8baeL4AAAAJ&hl=en&oi=sra" target="_blank">Google Scholar</a></li>
+            <li><a href="https://github.com/laguarda14" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/luis-laguarda-phd-5429a494/" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:L.LaguardaSanchez@tudelft.nl">email</a></li>
+         </ul>
+      </section>
+
+      <!-- news -->
+      <section>
+         <h2>what's new</h2>
+         <ul>
+         <li>December 2025 — initial allocation awarded for NWO supercomputing proposal on the national supercomputer Snellius</li>
+         <li>December 2025 — co-organizing the 15th ERCOFTAC Workshop on Direct and Large Eddy Simulation, hosted in Delft on 20-22 May, 2026. Call for abstract now open</li>
+         <li>November 2025 — building on the success of our introductory CUDA course, we began developing an advanced GPU programming course. Stay tuned</li>
+         <li>September 2025 — attended the 3rd Colloquium on Separation Control in High-Speed Flows in Munich (3–5 September), where I presented work on shock-induced separation control and chaired a technical session and plenary discussion. A highly engaging and productive event</li>
+         </ul>
+      </section>
+
+      <!-- education -->
+      <section>
+         <h2>education</h2>
+         <!-- <li>2024: <em>Ph.D.</em> in numerical aerodynamics, TU Delft. Thesis: <a href="https://research.tudelft.nl/en/publications/shock-interaction-phenomena/" target="_blank">Shock interaction phenomena</a>.</li>
+         <li>2017: <em>M.Sc.</em> thesis at TU Delft: Bi-directional regular&mdash;Mach reflection transition in asymmetric shock interactions.</li>
+         <li>2017: <em>M.Sc.</em> in Aerospace Engineering, University of Applied Sciences Wiener Neustadt.</li>
+         <li>2015: <em>B.Sc.</em> thesis at UC Irvine with the <a href="https://balsells.eng.uci.edu/" target="_blank">Balsells fellowship</a>: Design of an axial four stage low-pressure compressor.</li>
+         <li>2015: <em>B.Sc.</em> in Aerospace Engineering, Universitat Polit&#232cnica de Catalunya.</li> -->
+         I hold a Ph.D. in numerical aerodynamics from TU Delft (2024), with a <a href="https://research.tudelft.nl/en/publications/shock-interaction-phenomena/" target="_blank">thesis</a> focused on shock-shock and shock-turbulence interactions. I previously earned my M.Sc. in Aerospace Engineering from the University of Applied Sciences Wiener Neustadt (2017); my master's thesis was carried out at TU Delft and investigated the bi-directional regular-Mach reflection transition in asymmetric shock interactions. I obtained my B.Sc. in Aerospace Engineering from the Universitat Polit&egrave;cnica de Catalunya (2015), with my bachelor's thesis carried out at the University of California, Irvine under the <a href="https://balsells.eng.uci.edu/" target="_blank">Balsells fellowship</a>, where I worked on the design of an axial four-stage low-pressure compressor.
+      </section>
+
+      <!-- more about me -->
+      <section>
+         <h2>life outside work</h2>
+         <!-- <ul>
+         <li><a href="reading.html">reading</a></li>
+         <li><a href="exercise.html">exercising</a></li>
+         <li><a href="music.html">music</a></li>
+         <li><a href="guinea-bissau.html">my trip to Guinea-Bissau</a></li>
+         </ul> -->
+         <p>
+         <em>mens sana in corpore sano.</em> I try to live by it: <a href="exercise.html">exercising</a> daily, eating a clean, plant-based diet, and making space for proper rest. Daily meditation has also been genuinely life-changing, despite having once dismissed it. I also love reading (check out my <a href="reading.html">reading list</a>), having meaningful conversations with friends, and when time allows, playing the guitar and messing around with a DDJ-FLX4. More recenlty, a trip to Guinea-Bissau marked another turning point in my life, something I hope to write about soon.
+         <!-- <a href="music.html">music</a>. More recenlty, a <a href="guinea-bissau.html">trip to Guinea-Bissau</a> marked another turning point in my life. -->
+         </p>
+      </section>
+
+   </div>
+
    <footer>
       &copy; 2025 Luis Laguarda
    </footer>
-  </div>
-  <script src="gettime.js"></script>
+
+   <script src="gettime.js"></script>
 </body>
 </html>
